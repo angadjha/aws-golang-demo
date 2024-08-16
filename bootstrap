@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# This is the bootstrap file that will invoke your Go binary
+
+# Set the permissions to ensure the main binary is executable
+chmod +x /var/task/demolambda
+# Execute the Go binary
+exec /var/task/demolambda
